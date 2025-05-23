@@ -1,0 +1,8 @@
+{
+  "name": "homicide-proxy",
+  "version": "1.0.0",
+  "description": "Netlify function for private Google Sheets access",
+  "dependencies": {
+    "googleapis": "^105.0.0"
+  }
+}
