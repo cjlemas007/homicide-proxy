@@ -66,7 +66,7 @@ exports.handler = async function (event, context) {
     const spreadsheetId = '1uvWaEjlmj8PwBdWQRLAcCccF_ZsU7bt8_TAN7hRPuaE';
     // Ensure this range accurately reflects your sheet's structure.
     // If headers are in row 1 and data starts in row 2, A1:Z is fine for up to 1000 rows of data.
-    const range = "'Copy of Sheet1 1'!A1:Z1000"; 
+    const range = "'Copy of Sheet1 1'!A1:Z"; 
 
     console.log(`Workspaceing data from spreadsheetId: ${spreadsheetId}, range: ${range}`);
     const response = await sheets.spreadsheets.values.get({
