@@ -14,7 +14,7 @@ exports.handler = async function(event, context) {
     const sheets = google.sheets({ version: 'v4', auth: client });
 
     const spreadsheetId = '1uvWaEjlmj8PwBdWQRLAcCccF_ZsU7bt8_TAN7hRPuaE';
-    const range = "'Copy of Sheet1 1'!A1:Z1000";
+    const range = "'Copy of Sheet1 1'!A1:Z";
 
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId,
